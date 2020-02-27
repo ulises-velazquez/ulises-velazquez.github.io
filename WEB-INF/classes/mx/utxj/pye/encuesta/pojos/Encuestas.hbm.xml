@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 30/01/2020 09:07:33 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="mx.utxj.pye.encuesta.pojos.Encuestas" table="encuestas" catalog="encuesta_servicios" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="area" type="string">
+            <column name="area" length="100" not-null="true" />
+        </property>
+        <property name="beneficiario" type="string">
+            <column name="beneficiario" length="45" not-null="true" />
+        </property>
+        <property name="pregunta1" type="int">
+            <column name="pregunta1" not-null="true" />
+        </property>
+        <property name="pregunta2" type="int">
+            <column name="pregunta2" not-null="true" />
+        </property>
+        <property name="pregunta3" type="int">
+            <column name="pregunta3" not-null="true" />
+        </property>
+        <property name="pregunta4" type="int">
+            <column name="pregunta4" not-null="true" />
+        </property>
+        <property name="pregunta5" type="int">
+            <column name="pregunta5" not-null="true" />
+        </property>
+        <property name="comentarios" type="string">
+            <column name="comentarios" length="500" />
+        </property>
+        <property name="fecha" type="date">
+            <column name="fecha" length="10" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

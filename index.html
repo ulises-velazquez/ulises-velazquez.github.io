@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon" type="ico" href="img/utxj.png">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Bienvenido a la Universidad Tecnológica de Xicotepec de Juárez</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body id="SLIDEBG">
+
+    <!-- Start your project here-->
+    <div id="contenido" class="row justify-content-center mt-5 mb-5">
+
+        <div class="col-md-8">
+            <div class="card" style="background-color: rgba(255,255,255,0.95)">
+                <h3
+                    class="card-header green-gradient lighten-1 white-text text-uppercase font-weight-bold text-center py-5">
+                    Cuentanos tu experiencia</h3>
+                <div class="card-body mb-4">
+                    <form id="encuestaform" class="text-center" action="load.html">
+                        <div id="informacion" class="card-body">
+                            <p class="h5-responsive">Clasificación de beneficiario</p>
+                            <select id="visitante" form="encuestaform" class='browser-default custom-select mb6'
+                                name="persona" required="true">
+                                <option value="Alumno">Alumno</option>
+                                <option value="Aspirante">Aspirante</option>
+                                <option value="Egresado">Egresado</option>
+                                <option value="Externo">Externo</option>
+                                <option value="Padre de Familia">Padre de Familia</option>
+                            </select>
+                            <p class="h5-responsive"><br />¿Qué área visitaste?</p>
+                            <select id="areas" form="encuestaform" class='browser-default custom-select mb6' name="area"
+                                required="true">
+                                <option value="Becas de la Universidad Tecnologica de Xicotepec de Juarez">Becas de la
+                                    Universidad Tecnológica de Xicotepec de Juárez</option>
+                                <option value="Estadias">Estadías</option>
+                                <option value="Informacion y Estadistica">Información y Estadística</option>
+                                <option value="Seguimiento de egresados/as">Seguimiento de egresados/as</option>
+                                <option value="Servicios Escolares">Servicios Escolares</option>
+                                <option value="Titulacion">Titulación</option>
+                            </select>
+                        </div>
+                        <div id="preguntas" class="card-body">
+                            <div id="pregunta1">
+                                <p><br />¿Cómo considera el trato que le brindó el personal que le atendió?</p>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="p11" name="pregunta1"
+                                        value="1">
+                                    <label class="custom-control-label" for="p11">Muy malo</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="p12" name="pregunta1"
+                                        value="2">
+                                    <label class="custom-control-label" for="p12">Malo</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="p13" name="pregunta1"
+                                        value="3">
+                                    <label class="custom-control-label" for="p13">Regular</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="p14" name="pregunta1"
+                                        value="4">
+                                    <label class="custom-control-label" for="p14">Bueno</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="p15" name="pregunta1"
+                                        required="true" value="5">
+                                    <label class="custom-control-label" for="p15">Muy bueno</label>
+                                </div>
+                            </div>
+                            <div id="pregunta2">
+                                <p><br />¿Cómo considera la información que se le proporcionó sobre el servicio
+                                    solicitado?</p>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="p21" name="pregunta2"
+                                        value="1">
+                                    <label class="custom-control-label" for="p21">Muy malo</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="p22" name="pregunta2"
+                                        value="2">
+                                    <label class="custom-control-label" for="p22">Malo</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="p23" name="pregunta2"
+                                        value="3">
+                                    <label class="custom-control-label" for="p23">Regular</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="p24" name="pregunta2"
+                                        value="4">
+                                    <label class="custom-control-label" for="p24">Bueno</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="p25" name="pregunta2"
+                                        required="true" value="5">
+                                    <label class="custom-control-label" for="p25">Muy bueno</label>
+                                </div>
+                            </div>
+                            <div id="pregunta3">
+                                <p><br />¿Cómo considera el tiempo que tardó en esperar a que le atendieran?</p>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="p31" name="pregunta3"
+                                        value="1">
+                                    <label class="custom-control-label" for="p31">Muy malo</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="p32" name="pregunta3"
+                                        value="2">
+                                    <label class="custom-control-label" for="p32">Malo</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="p33" name="pregunta3"
+                                        value="3">
+                                    <label class="custom-control-label" for="p33">Regular</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="p34" name="pregunta3"
+                                        value="4">
+                                    <label class="custom-control-label" for="p34">Bueno</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="p35" name="pregunta3"
+                                        required="true" value="5">
+                                    <label class="custom-control-label" for="p35">Muy bueno</label>
+                                </div>
+                            </div>
+                            <div id="pregunta4">
+                                <p><br />¿Cómo considera el tiempo que tardó en realizar su trámite?</p>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="p41" name="pregunta4"
+                                        value="1">
+                                    <label class="custom-control-label" for="p41">Muy malo</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="p42" name="pregunta4"
+                                        value="2">
+                                    <label class="custom-control-label" for="p42">Malo</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="p43" name="pregunta4"
+                                        value="3">
+                                    <label class="custom-control-label" for="p43">Regular</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="p44" name="pregunta4"
+                                        value="4">
+                                    <label class="custom-control-label" for="p44">Bueno</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="p45" name="pregunta4"
+                                        required="true" value="5">
+                                    <label class="custom-control-label" for="p45">Muy bueno</label>
+                                </div>
+                            </div>
+                            <div id="pregunta5">
+                                <p><br />De manera general, indique cómo es su percepción sobre el servicio solicitado.
+                                </p>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="p51" name="pregunta5"
+                                        value="1">
+                                    <label class="custom-control-label" for="p51">Muy malo</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="p52" name="pregunta5"
+                                        value="2">
+                                    <label class="custom-control-label" for="p52">Malo</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="p53" name="pregunta5"
+                                        value="3">
+                                    <label class="custom-control-label" for="p53">Regular</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="p54" name="pregunta5"
+                                        value="4">
+                                    <label class="custom-control-label" for="p54">Bueno</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="p55" name="pregunta5"
+                                        required="true" value="5">
+                                    <label class="custom-control-label" for="p55">Muy bueno</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="comentarios" class="card-body">
+                            <div class="md-form">
+                                <i class="fas fa-pencil-alt prefix"></i>
+                                <textarea id="form10" class="md-textarea form-control" rows="3" name='comentario'
+                                    maxlength="500"></textarea>
+                                <label for="form10">Dejanos tu comentario</label>
+                            </div>
+                        </div>
+                        <!-- Finalizar Formulario -->
+                        <button class="btn btn-info btn-block my-4 green-gradient" type="submit" value="encuesta"
+                            name="enviar"><a href="load.jsp">Enviar</button>
+                        <!-- Redes Sociales -->
+
+
+
+                    </form>
+                    <div class="row text-center">
+                        <p class="col-md-12 mb-4 text-center">Siguenos en nuestras redes sociales y sitios webs:</p>
+                        <div class="col-md-12 mb-4">
+                            <a href="https://www.facebook.com/utxj.2002/" class="btn btn-primary px-3 green-gradient"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/UT_Xicotepec" class="btn btn-primary px-3 green-gradient"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="http://www.utxicotepec.edu.mx/" class="btn btn-primary px-3 green-gradient"><i
+                                    class="fab fa-chrome"></i></a>
+                            <a href="https://www.youtube.com/channel/UCSWDcnGWn8P-L0-To7wdLBw"
+                                class="btn btn-primary px-3 green-gradient"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-footer font-weight-bold text-center text-muted white-text green-gradient">
+                    <h3 class="font-weight-bold text-center">Gracias por tu visita</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start your project here-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+
+
+    <script type="text/javascript"></script>
+</body>
+
+</html>
